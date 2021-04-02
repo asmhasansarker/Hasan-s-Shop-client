@@ -6,7 +6,6 @@ import { faTrashAlt, faEdit } from "@fortawesome/free-solid-svg-icons";
 const ManageSingleProduct = (props) => {
   const {
     productName,
-    productKey,
     _id,
     productPrice,
     productWeight,

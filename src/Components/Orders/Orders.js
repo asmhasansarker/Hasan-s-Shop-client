@@ -8,7 +8,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch("https://pumpkin-shortcake-28288.herokuapp.com/orders?email=" + user.email)
+    fetch("https://pumpkin-shortcake-28288.herokuapp.com/orders?email="+user.email)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [orders]);

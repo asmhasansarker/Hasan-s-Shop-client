@@ -19,7 +19,7 @@ const Checkout = () => {
       .then((res) => res.json())
       .then((data) => setMyProduct(data));
       
-  }, []);
+  }, []); 
 
 
   

@@ -8,7 +8,7 @@ const ProductCart = (props) => {
         
     // }
     // console.log(props)
-    const {productName, productWeight, productPrice,productImage, _id, productKey} = props.product;
+    const {productName, productWeight, productPrice,productImage, productKey} = props.product;
     return (
         <div className="col-md-3 text-center p-1 border shadow rounded m-2">
             <img className="img-fluid"  src={productImage} alt=""/>

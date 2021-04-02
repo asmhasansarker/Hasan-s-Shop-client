@@ -41,6 +41,7 @@ const AddProduct = () => {
       },
       body: JSON.stringify(productData),
     }).then((res) => console.log("server side response"));
+  
   };
 
   return (
@@ -96,18 +97,13 @@ const AddProduct = () => {
             <button className="btn btn-success mt-3 mr-4" type="submit">
               Submit
             </button>
+            <button className="btn btn-success mt-3 mr-4 mx-2" type="reset">
+              Reset
+            </button>
           </div>
         </div>
 
        
-
-        {/* <input type="submit" /> */}
-
-        {/* <div className="d-flex justify-content-end mt-5 mr-5">
-          <button className="btn btn-success mt-3 mr-4" type="submit">
-            Submit
-          </button>
-        </div> */}
       </form>
     </div>
   );
