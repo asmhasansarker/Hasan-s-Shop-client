@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Addvartisement from "../Addvartisement/Addvartisement";
 import ProductCart from "../ProductCart/ProductCart";
 
 const Home = () => {
@@ -11,6 +12,8 @@ const Home = () => {
   }, []);
 
   return (
+    <>
+    <Addvartisement></Addvartisement>
     <div className="container">
      
       <div className="input-group my-3 w-50 mx-auto">
@@ -42,6 +45,7 @@ const Home = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

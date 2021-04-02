@@ -19,6 +19,7 @@ const OrderCart = (props) => {
             <button
                 onClick={() => handleDeleteOrder(productKey)}
               className="btn btn-danger"
+              data-toggle="tooltip" data-placement="left" title="Cancel Order"
             >
               
               <FontAwesomeIcon className="mx-2" icon={faTrashAlt} />

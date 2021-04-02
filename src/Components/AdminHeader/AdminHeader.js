@@ -8,7 +8,7 @@ import AddProduct from "../AddProduct/AddProduct";
 import ManageProduct from "../ManageProduct/ManageProduct";
 import './AdminHeader.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faThLarge, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faThLarge, faPlus, faEdit } from "@fortawesome/free-solid-svg-icons";
 
 const AdminHeader = () => {
     const [user] = useContext(UserContext)
@@ -43,6 +43,7 @@ const AdminHeader = () => {
             Add Product
             </Nav.Link>
             <Nav.Link  className="ml-3 text-white">
+            <FontAwesomeIcon className="mx-2" icon={faEdit} />
             Edit Product
             </Nav.Link>
        

@@ -49,12 +49,14 @@ const ManageSingleProduct = (props) => {
             <button
               onClick={() => setEditabel(!editable)}
               className="btn btn-success mr-3"
+              data-toggle="tooltip" data-placement="left" title="Edit Product"
             >
               <FontAwesomeIcon className="mx-2" icon={faEdit} />
             </button>
             <button
               onClick={() => handleDeleteProduct(_id)}
               className="btn btn-danger"
+              data-toggle="tooltip" data-placement="left" title="Delete Product"
             >
               
               <FontAwesomeIcon className="mx-2" icon={faTrashAlt} />
