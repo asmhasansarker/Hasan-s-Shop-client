@@ -1,3 +1,13 @@
 .productCart{
    height: 400px;
 }
+
+@media only screen and (max-width: 600px) {
+   .productCart {
+      height: 380px;
+      padding-bottom:0 ;
+   }
+   .productCart img{
+      height: 250px;
+   }
+ }

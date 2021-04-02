@@ -9,7 +9,7 @@ const Addvartisement = () => {
       <Row>
         <Col className="text-center">
           
-          <p className="add">Stay Home, Stay Safe. Order Now</p>
+          <p className="add">Stay Home, Stay Safe. Order Now </p>
            
               
             
