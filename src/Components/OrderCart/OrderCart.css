@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+    .orderCart{
+        margin-bottom: 20px !important;
+    }
+    .orderCart img {
+      height: 250px;
+    }
+  }
