@@ -1,0 +1,9 @@
+.admin-header img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+}
+.admin-header .custom-header{
+    background-color: #0a3d62 ;
+    
+}
