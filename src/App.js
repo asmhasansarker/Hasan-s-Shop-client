@@ -46,9 +46,9 @@ function App() {
           <PrivateRoute path="/product/:productKey">
             <Checkout></Checkout>
           </PrivateRoute>
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin></Admin>
-          </Route>
+          </PrivateRoute>
           <Route path="/deals">
             <Deals></Deals>
           </Route>
