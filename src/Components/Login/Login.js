@@ -78,6 +78,7 @@ function Login() {
                 }
 
                 setUser(signedInUser)
+                history.replace(from)
             })
             .catch((error) => {
                 console.log(error)
@@ -150,6 +151,7 @@ function Login() {
                     newUserInfo.success = true;
                     newUserInfo.handleSignOut = handleSignOut
                     setUser(newUserInfo)
+                    history.replace(from)
                     console.log(user);
 
                 })

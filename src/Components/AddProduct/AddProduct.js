@@ -1,11 +1,14 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Link, Redirect } from "react-router-dom";
 import "./AddProduct.css";
 
 const AddProduct = () => {
   const { register, handleSubmit } = useForm();
   const [productImageURL, setProductImageURL] = useState(null);
+ 
+  
 
   const productKey = () => {
     let n = (Math.random() * 0xfffff * 1000000).toString(16);
@@ -40,7 +43,12 @@ const AddProduct = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(productData),
-    }).then((res) => console.log("server side response"));
+    }).then((res) => {
+      console.log("server side response");
+    });
+
+    alert("Product added");
+   
   
   };
 
@@ -93,14 +101,19 @@ const AddProduct = () => {
             />
           </div>
 
-          <div className="custom-form">
-            <button className="btn btn-success mt-3 mr-4" type="submit">
-              Submit
-            </button>
-            <button className="btn btn-success mt-3 mr-4 mx-2" type="reset">
-              Reset
-            </button>
-          </div>
+        
+         <div className="custom-form">
+            
+          <button className="btn btn-success mt-3 mr-4" type="submit">
+            Submit
+          </button>
+        
+          <button className="btn btn-success mt-3 mr-4 mx-2" type="reset">
+            Reset
+          </button>
+        </div>
+       
+
         </div>
 
        
