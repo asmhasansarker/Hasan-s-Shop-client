@@ -12,6 +12,7 @@ const ManageProduct = () => {
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, [allProducts]);
+  
 
   
 
